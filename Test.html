@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
+ <script>
+function showImage() {
+    var x = document.getElementById("image1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+} 
+</script>
 <body>
 
-<h2>The Button Element</h2>
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+<img id="image1" src="smiley.gif" alt="Smiley face" style="display:none" width="42" height="42">
+
+<button type="button" onclick="showImage">Click Me!</button>
  
 </body>
 </html>
